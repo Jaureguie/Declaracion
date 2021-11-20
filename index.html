@@ -7,19 +7,40 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento&family=Yuji+Boku&display=swap" rel="stylesheet">    
 </head>
 <body>
     <div class="container">
-        <a>¿Te gustaría ser mi novia?</a>
+        <a><span class="typed"></span></a>
         
     </div>
     <div class="botones">
-        <button class="button">Si</button>
+        <button class="button" id="yes">Si</button>
         <br>
-        <button class="button">No</button> 
+        <button class="button" id="no">No</button> 
     </div>
     <img class="imagen" src="IMG/heart.png">
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <a>Seamos muy felices </a><i class='bx bxs-heart'></i>
+            <img class="imagenover" src="IMG/kiss.gif">
+            <div class="cerrar" id="cerrarpopup">
+                <i class='bx bx-x'></i>
+            </div>
+        </div>
+    </div>
+    <div class="overlay2" id="overlay2">
+        <div class="popup">
+            <a>El sistema no puede registrar esta petición </a>
+            <img class="imagenover" src="IMG/error.gif">
+            <div class="cerrar" id="cerrarpopup2">
+                <i class='bx bx-x'></i>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="JS/events.js"></script>
 </body>
 </html>
